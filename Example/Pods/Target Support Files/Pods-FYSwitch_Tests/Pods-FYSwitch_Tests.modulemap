@@ -1,0 +1,6 @@
+framework module Pods_FYSwitch_Tests {
+  umbrella header "Pods-FYSwitch_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

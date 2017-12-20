@@ -1,0 +1,6 @@
+framework module AHEasing {
+  umbrella header "AHEasing-umbrella.h"
+
+  export *
+  module * { export * }
+}

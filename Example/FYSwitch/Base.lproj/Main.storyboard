@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kCv-sO-VC1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="sDE-CV-4v2">
+            <objects>
+                <tableViewController id="Wn4-69-4DU" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="thT-0J-Cuy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <sections>
+                            <tableViewSection id="FjY-vz-kDq">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="OQ1-cB-GLk">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OQ1-cB-GLk" id="59D-k4-69p">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flb-Oa-1Q6" customClass="FYImageTextSwitch" customModule="FYSwitch">
+                                                    <rect key="frame" x="201" y="10" width="154" height="79.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="flb-Oa-1Q6" secondAttribute="height" multiplier="215:111" id="LDd-RP-k3p"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobIdentifier" value="FY2DRotateKnob"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="borderIdentifier" value="FYBorderPure"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="knobMargin">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOffBgColor">
+                                                            <color key="value" red="0.51955980059999995" green="0.74310261010000001" blue="0.28931701180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOnBgColor">
+                                                            <color key="value" red="0.96708077189999997" green="0.28821194169999997" blue="0.19415804740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobOnText" value="On"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobOffText" value="Off"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bgIdentifier" value="FYBgPure"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="offBgColor">
+                                                            <color key="value" red="0.9532030225" green="0.93695485590000005" blue="0.95328336950000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="flb-Oa-1Q6" firstAttribute="top" secondItem="59D-k4-69p" secondAttribute="top" constant="10" id="SIN-ch-Qeb"/>
+                                                <constraint firstAttribute="trailing" secondItem="flb-Oa-1Q6" secondAttribute="trailing" constant="20" id="ofI-IY-esf"/>
+                                                <constraint firstItem="flb-Oa-1Q6" firstAttribute="centerY" secondItem="59D-k4-69p" secondAttribute="centerY" id="xSC-Gf-hkR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Bad-je-WLn">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bad-je-WLn" id="KVD-vH-y3k">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uyo-GJ-7Ru" customClass="FYImageTextSwitch" customModule="FYSwitch">
+                                                    <rect key="frame" x="201" y="10" width="154" height="79.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Uyo-GJ-7Ru" secondAttribute="height" multiplier="215:111" id="eJr-BY-5fv"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobIdentifier" value="FY2DRotateKnob"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="borderIdentifier" value="FYBorderPure"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="knobMargin">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOffBgColor">
+                                                            <color key="value" red="0.51955980059999995" green="0.74310261010000001" blue="0.28931701180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOnBgColor">
+                                                            <color key="value" red="0.96708077189999997" green="0.28821194169999997" blue="0.19415804740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bgIdentifier" value="FYBgPure"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="offBgColor">
+                                                            <color key="value" red="0.9532030225" green="0.93695485590000005" blue="0.95328336950000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="knobOnImage" value="sad"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="knobOffImage" value="happy"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Uyo-GJ-7Ru" firstAttribute="centerY" secondItem="KVD-vH-y3k" secondAttribute="centerY" id="ZBN-Iu-eZz"/>
+                                                <constraint firstItem="Uyo-GJ-7Ru" firstAttribute="top" secondItem="KVD-vH-y3k" secondAttribute="top" constant="10" id="gDx-tm-z67"/>
+                                                <constraint firstAttribute="trailing" secondItem="Uyo-GJ-7Ru" secondAttribute="trailing" constant="20" id="mHk-CO-UAp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="1TX-zW-hsX">
+                                        <rect key="frame" x="0.0" y="200" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1TX-zW-hsX" id="n75-vh-cGH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhy-Ob-9a6" customClass="FYSwitch" customModule="FYSwitch">
+                                                    <rect key="frame" x="222" y="10" width="133" height="78"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOnColor">
+                                                            <color key="value" red="0.69816136360000003" green="0.904910624" blue="0.65076529979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOffColor">
+                                                            <color key="value" red="0.87275254729999996" green="0.81055861709999999" blue="0.76358300450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobIdentifier" value="FY3DSpringRotateKnob"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="borderIdentifier" value="FYBorderPure"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOffBgColor">
+                                                            <color key="value" red="0.87275254729999996" green="0.81055861709999999" blue="0.76358300450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOnBgColor">
+                                                            <color key="value" red="0.69816136360000003" green="0.904910624" blue="0.65076529979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="onBgColor">
+                                                            <color key="value" red="0.76312988999999998" green="0.96666425469999995" blue="0.70939117669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="offBgColor">
+                                                            <color key="value" red="0.96906858679999996" green="0.94948071239999998" blue="0.91788768769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bgIdentifier" value="FYBgPure"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="hhy-Ob-9a6" secondAttribute="trailing" constant="20" id="6AU-yn-bK4"/>
+                                                <constraint firstItem="hhy-Ob-9a6" firstAttribute="top" secondItem="n75-vh-cGH" secondAttribute="top" constant="10" id="9Dp-oq-reg"/>
+                                                <constraint firstItem="hhy-Ob-9a6" firstAttribute="width" secondItem="hhy-Ob-9a6" secondAttribute="height" multiplier="160:94" id="SeF-64-nue"/>
+                                                <constraint firstItem="hhy-Ob-9a6" firstAttribute="centerY" secondItem="n75-vh-cGH" secondAttribute="centerY" id="aF4-wv-w0A"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="EE7-nz-SUC">
+                                        <rect key="frame" x="0.0" y="300" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EE7-nz-SUC" id="F93-yc-WfW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ac7-KZ-E0e" customClass="FYSwitch" customModule="FYSwitch">
+                                                    <rect key="frame" x="235.5" y="20" width="119.5" height="58"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
+                                                            <real key="value" value="7.6699999999999999"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOffColor">
+                                                            <color key="value" red="0.90578371290000004" green="0.9059391618" blue="0.90577393770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobIdentifier" value="FY3DBlinkRotateKnob"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="borderIdentifier" value="FYBorderPure"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOffBgColor">
+                                                            <color key="value" red="0.87275254729999996" green="0.81055861709999999" blue="0.76358300450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOnBgColor">
+                                                            <color key="value" red="0.69816136360000003" green="0.904910624" blue="0.65076529979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="offBgColor">
+                                                            <color key="value" red="0.96852236989999996" green="0.96868795159999999" blue="0.96851199870000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bgIdentifier" value="FYBgPure"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ac7-KZ-E0e" firstAttribute="top" secondItem="F93-yc-WfW" secondAttribute="top" constant="20" id="FPw-tB-W1J"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ac7-KZ-E0e" secondAttribute="trailing" constant="20" id="VRZ-M0-ofo"/>
+                                                <constraint firstItem="Ac7-KZ-E0e" firstAttribute="width" secondItem="Ac7-KZ-E0e" secondAttribute="height" multiplier="252:122" id="Yic-jf-vma"/>
+                                                <constraint firstItem="Ac7-KZ-E0e" firstAttribute="centerY" secondItem="F93-yc-WfW" secondAttribute="centerY" id="fAx-GE-2sf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="P1T-VU-RhH">
+                                        <rect key="frame" x="0.0" y="400" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P1T-VU-RhH" id="iUD-4M-jcq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="okU-o2-pDv" customClass="FYSwitch" customModule="FYSwitch">
+                                                    <rect key="frame" x="212" y="10" width="143" height="79.5"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="okU-o2-pDv" secondAttribute="height" multiplier="315:175" id="kGM-1h-Cte"/>
+                                                    </constraints>
+                                                    <viewLayoutGuide key="safeArea" id="jIA-fW-p3X"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOnColor">
+                                                            <color key="value" red="0.96862745100000003" green="0.2901960784" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOffColor">
+                                                            <color key="value" red="0.29819521310000002" green="0.84997797009999998" blue="0.390124321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobIdentifier" value="FYLineStrokeKnob"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="borderIdentifier" value="FYBorderPure"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="knobMargin">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOffBgColor">
+                                                            <color key="value" red="0.95442396399999996" green="0.8990444541" blue="0.82762563229999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOnBgColor">
+                                                            <color key="value" red="0.494592011" green="0.52478688959999997" blue="0.98144155740000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bgIdentifier" value="FYBgPure"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="offBgColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.95050245519999998" green="0.89512234930000001" blue="0.82370334860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="okU-o2-pDv" firstAttribute="top" secondItem="iUD-4M-jcq" secondAttribute="top" constant="10" id="DYQ-QG-5g8"/>
+                                                <constraint firstAttribute="trailing" secondItem="okU-o2-pDv" secondAttribute="trailing" constant="20" id="GzH-fz-hAv"/>
+                                                <constraint firstItem="okU-o2-pDv" firstAttribute="centerY" secondItem="iUD-4M-jcq" secondAttribute="centerY" id="dIK-Vr-SMB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="100" id="f1A-hu-zcH">
+                                        <rect key="frame" x="0.0" y="500" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f1A-hu-zcH" id="ajf-yP-5tb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpr-kM-ayJ" customClass="FYSwitch" customModule="FYSwitch">
+                                                    <rect key="frame" x="255" y="24" width="100" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="EF0-AA-RYu"/>
+                                                        <constraint firstAttribute="width" secondItem="jpr-kM-ayJ" secondAttribute="height" multiplier="1:0.5" id="Jhc-jA-3fO"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOnColor">
+                                                            <color key="value" red="0.58823529409999997" green="0.84170967340000002" blue="0.90075868370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOffColor">
+                                                            <color key="value" red="0.060839347539999998" green="0.1911863983" blue="0.25516062969999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobIdentifier" value="FYDayNightKnob1"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="borderIdentifier" value="FYBorderLinearChange"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOffBgColor">
+                                                            <color key="value" red="0.86666666670000003" green="0.7725490196" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOnBgColor">
+                                                            <color key="value" red="0.86666666670000003" green="0.7725490196" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="onBgColor">
+                                                            <color key="value" red="0.72549019609999998" green="0.89411764709999997" blue="0.93860071899999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="offBgColor">
+                                                            <color key="value" red="0.098549671470000003" green="0.32020252939999999" blue="0.387268424" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="knobMargin">
+                                                            <real key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bgIdentifier" value="FYDayNightBg1"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="jpr-kM-ayJ" secondAttribute="trailing" constant="20" id="AqY-8k-j9Y"/>
+                                                <constraint firstItem="jpr-kM-ayJ" firstAttribute="centerY" secondItem="ajf-yP-5tb" secondAttribute="centerY" id="Blo-bj-VOx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="100" id="N8F-Ay-nTu">
+                                        <rect key="frame" x="0.0" y="600" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N8F-Ay-nTu" id="0nG-h6-iik">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4j-1w-yjQ" customClass="FYSwitch" customModule="FYSwitch">
+                                                    <rect key="frame" x="267" y="24" width="88" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="l4j-1w-yjQ" secondAttribute="height" multiplier="88:50" id="9s3-wh-k1T"/>
+                                                        <constraint firstAttribute="height" constant="50" id="ar0-wT-TY2"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOnColor">
+                                                            <color key="value" red="0.52485656739999997" green="0.76403313880000001" blue="0.84394377470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOffColor">
+                                                            <color key="value" red="0.1133852825" green="0.1135058776" blue="0.1134039238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobIdentifier" value="FYDayNightKnob2"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="borderIdentifier" value="FYBorderLineStroke"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOffBgColor">
+                                                            <color key="value" red="0.89001703259999998" green="0.89454728360000002" blue="0.78138440850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOnBgColor">
+                                                            <color key="value" red="0.87932747600000005" green="0.76494008300000005" blue="0.28059381249999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="onBgColor">
+                                                            <color key="value" red="0.6178434491" green="0.88931983709999995" blue="0.98595958949999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="offBgColor">
+                                                            <color key="value" red="0.23466137049999999" green="0.2546934783" blue="0.27138042449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="knobMargin">
+                                                            <real key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bgIdentifier" value="FYDayNightBg2"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="l4j-1w-yjQ" secondAttribute="trailing" constant="20" id="WYV-fH-AIz"/>
+                                                <constraint firstItem="l4j-1w-yjQ" firstAttribute="centerY" secondItem="0nG-h6-iik" secondAttribute="centerY" id="uJU-yQ-RXs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="120" id="mSa-sy-R0S">
+                                        <rect key="frame" x="0.0" y="700" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mSa-sy-R0S" id="va2-ba-u6z">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1R-vS-CCW" customClass="FYSwitch" customModule="FYSwitch">
+                                                    <rect key="frame" x="238" y="35" width="117" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="JrU-CB-Hqd"/>
+                                                        <constraint firstAttribute="width" secondItem="e1R-vS-CCW" secondAttribute="height" multiplier="187:80" id="mT2-7A-hhd"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOnColor">
+                                                            <color key="value" red="0.76302212479999998" green="0.72527617219999996" blue="0.067962996659999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOffColor">
+                                                            <color key="value" red="0.039215686270000001" green="0.17254901959999999" blue="0.25882352939999997" alpha="0.79582966550000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobIdentifier" value="FYDayNightKnob3"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="borderIdentifier" value="FYBorderLineStrokeSpring"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOffBgColor">
+                                                            <color key="value" red="0.85130780939999995" green="0.84284138679999998" blue="0.1509429216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOnBgColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="onBgColor">
+                                                            <color key="value" red="0.044280387460000001" green="0.092674277720000003" blue="0.1285752356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="offBgColor">
+                                                            <color key="value" red="0.93831384179999999" green="0.95290666820000003" blue="0.89371645450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="knobMargin">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="e1R-vS-CCW" secondAttribute="trailing" constant="20" id="331-8x-0ea"/>
+                                                <constraint firstItem="e1R-vS-CCW" firstAttribute="centerY" secondItem="va2-ba-u6z" secondAttribute="centerY" id="YE7-0M-ET2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="yOT-g3-5Ee">
+                                        <rect key="frame" x="0.0" y="820" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yOT-g3-5Ee" id="iJb-C2-4Yr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwx-wM-Ejx" customClass="FYImageTextSwitch" customModule="FYSwitch">
+                                                    <rect key="frame" x="212" y="16.5" width="143" height="67"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="67" id="8Tm-DC-U0y"/>
+                                                        <constraint firstAttribute="width" secondItem="dwx-wM-Ejx" secondAttribute="height" multiplier="286:134" id="tST-du-JWu"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="borderIdentifier" value="FYBorderLinearChange"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="knobMargin">
+                                                            <real key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bgIdentifier" value="FYBgGradientChange"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="knobOnImage" value="delete"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="knobOffImage" value="right"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobIdentifier" value="FYScaleKnob"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOffColor">
+                                                            <color key="value" red="0.062745098040000002" green="0.22352941179999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderOnColor">
+                                                            <color key="value" red="0.22352941179999999" green="0.22352941179999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="dwx-wM-Ejx" secondAttribute="trailing" constant="20" id="nji-sP-Vtt"/>
+                                                <constraint firstItem="dwx-wM-Ejx" firstAttribute="centerY" secondItem="iJb-C2-4Yr" secondAttribute="centerY" id="oMz-MV-nfT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="XSl-Bk-UpK">
+                                        <rect key="frame" x="0.0" y="920" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XSl-Bk-UpK" id="hWU-Mt-5tJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4I-RC-uD9" customClass="FYSwitch" customModule="FYSwitch">
+                                                    <rect key="frame" x="251" y="28" width="104" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="Vy2-rp-MEG"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOffBgColor">
+                                                            <color key="value" red="0.87275254729999996" green="0.81055861709999999" blue="0.76358300450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOnBgColor">
+                                                            <color key="value" red="0.69816136360000003" green="0.904910624" blue="0.65076529979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="onBgColor">
+                                                            <color key="value" red="0.4837703109" green="0.81901401279999997" blue="0.1592347324" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="offBgColor">
+                                                            <color key="value" red="0.73717361690000005" green="0.73730176690000004" blue="0.73716557029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bgIdentifier" value="FYPushKnobBg"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobIdentifier" value="FYPushKnob"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="knobMargin">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="A4I-RC-uD9" secondAttribute="trailing" constant="20" id="6QL-aV-V7W"/>
+                                                <constraint firstItem="A4I-RC-uD9" firstAttribute="centerY" secondItem="hWU-Mt-5tJ" secondAttribute="centerY" id="6Wj-xz-vov"/>
+                                                <constraint firstItem="A4I-RC-uD9" firstAttribute="width" secondItem="A4I-RC-uD9" secondAttribute="height" multiplier="104:42" id="fnG-uG-gok"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="q4T-Ha-vBC">
+                                        <rect key="frame" x="0.0" y="1020" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q4T-Ha-vBC" id="NvX-T9-fNI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMm-1a-oaO" customClass="FYSwitch" customModule="FYSwitch">
+                                                    <rect key="frame" x="171.5" y="19" width="183.5" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="H7b-fi-KOH"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOffBgColor">
+                                                            <color key="value" red="0.1450980392" green="0.76078431369999999" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="knobOnBgColor">
+                                                            <color key="value" red="0.89411764709999997" green="0.27450980390000002" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="offBgColor">
+                                                            <color key="value" red="0.81960784310000001" green="0.8862745098" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bgIdentifier" value="FYBgPure"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="knobMargin">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                            <real key="value" value="1.8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="knobIdentifier" value="FYCapsuleKnob"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="aMm-1a-oaO" firstAttribute="centerY" secondItem="NvX-T9-fNI" secondAttribute="centerY" id="98K-dq-jxQ"/>
+                                                <constraint firstItem="aMm-1a-oaO" firstAttribute="width" secondItem="aMm-1a-oaO" secondAttribute="height" multiplier="425:139" id="KzZ-6r-UD1"/>
+                                                <constraint firstAttribute="trailing" secondItem="aMm-1a-oaO" secondAttribute="trailing" constant="20" id="WWm-9U-nPo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Wn4-69-4DU" id="jEG-0z-hmL"/>
+                            <outlet property="delegate" destination="Wn4-69-4DU" id="Ced-uL-W2j"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Ca0-d5-4CY"/>
+                    <size key="freeformSize" width="375" height="1600"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RUc-Ww-uP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-549.60000000000002" y="-57.121439280359823"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ylv-Y1-Xp4">
+            <objects>
+                <navigationController id="kCv-sO-VC1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2vY-rh-I9S">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wn4-69-4DU" kind="relationship" relationship="rootViewController" id="R8A-tN-Alc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVR-jn-rX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1503" y="-57"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete" width="120" height="120"/>
+        <image name="happy" width="98" height="98"/>
+        <image name="right" width="120" height="120"/>
+        <image name="sad" width="97" height="98"/>
+    </resources>
+</document>
